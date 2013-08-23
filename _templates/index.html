@@ -1,0 +1,20 @@
+{%- extends "layout.html" -%}
+{%- block title %}{{post.title}}{% endblock %}
+
+{%- block document %}
+<div class="hentry" itemscope itemtype="http://schema.org/Article">
+  <h1 class="entry-title" itemprop="name">{{post.title}}</h1>
+  {%- if post.description %}
+  <blockquote class="entry-description" itemprop="description">{{post.description}}</blockquote>
+  {%- endif %}
+  <div class="entry-content" itemprop="articleBody">{{post.html}}</div>
+</div>
+
+<ul class="entry-list" style="margin-top: 40px">
+  {%- for item in resource.posts %}
+  <li itemscope itemtype="http://schema.org/Article">
+  <a itemprop="name" href="{{permalink_url(item)}}">{{item.title}}</a>
+  </li>
+  {%- endfor %}
+</ul>
+{% endblock -%}

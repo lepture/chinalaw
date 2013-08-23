@@ -1,0 +1,17 @@
+{
+  "sitename": "中华人民共和国法律汇总",
+  "source": "content",
+  "output": "_site",
+  "theme": "_themes/one",
+  "permalink": "{{directory}}/{{filename}}",
+  "google": "UA-21475122-5",
+  "perpage": 1000,
+  "navigation": [
+  ],
+  "writers": [
+    "nico.PageWriter",
+    "nico.PostWriter",
+    "nico.FileWriter",
+    "nico.StaticWriter"
+  ]
+}
