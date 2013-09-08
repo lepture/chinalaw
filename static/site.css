@@ -205,3 +205,18 @@ html, body {
   opacity: 0.9;
   color: white;
 }
+
+.tagcloud {
+  margin-bottom: 2em;
+}
+.tagcloud .count {
+  font-size: 12px;
+}
+.tagcloud a {
+  display: inline-block;
+  margin: 0.2em 0.4em;
+  opacity: 0.6;
+}
+.tagcloud a:hover {
+  opacity: 1;
+}
